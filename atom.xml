@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.ccuer.cn/"/>
-  <updated>2020-02-13T16:36:04.075Z</updated>
+  <updated>2020-02-13T18:58:30.409Z</updated>
   <id>blog.ccuer.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="blog.ccuer.cn/2020/02/14/hello-world/"/>
     <id>blog.ccuer.cn/2020/02/14/hello-world/</id>
     <published>2020-02-13T16:36:04.075Z</published>
-    <updated>2020-02-13T16:36:04.075Z</updated>
+    <updated>2020-02-13T18:58:30.409Z</updated>
     
     <summary type="html">
     
@@ -29,13 +29,19 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;blockquote&gt;&lt;p&gt;这是测试标签 Through mercy.&lt;/p&gt;
+&lt;footer&gt;&lt;strong&gt;David Levithan&lt;/strong&gt;&lt;cite&gt;Wide Awake&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+&lt;p&gt;Welcome to
         
       
     
     </summary>
     
     
+      <category term="test" scheme="blog.ccuer.cn/categories/test/"/>
+    
+    
+      <category term="-666 -777 -888" scheme="blog.ccuer.cn/tags/666-777-888/"/>
     
   </entry>
   
