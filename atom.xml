@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Mr.Chen</title>
+  <title>小陈同学 の blog</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>blog.ccuer.cn/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Mr.Chen</name>
     
   </author>
   
