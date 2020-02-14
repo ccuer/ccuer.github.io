@@ -5929,7 +5929,7 @@ button {
 }
 .cover-inner {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -100%);
 }
@@ -5954,7 +5954,10 @@ button {
   position: relative;
 }
 .cover-inner .cover-logo {
-  width: 6rem;
+  width: 12rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 .cover-learn-more {
   position: absolute;
