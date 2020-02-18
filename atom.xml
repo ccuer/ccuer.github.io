@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.ccuer.cn/"/>
-  <updated>2020-02-14T07:27:54.188Z</updated>
+  <updated>2020-02-18T06:42:35.314Z</updated>
   <id>blog.ccuer.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>记第一次搭建个人博客/记第一次搭建个人博客</title>
+    <title>记第一次搭建个人博客</title>
     <link href="blog.ccuer.cn/2020/02/18/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>blog.ccuer.cn/2020/02/18/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
-    <published>2020-02-18T06:13:17.611Z</published>
-    <updated>2020-02-14T07:27:54.188Z</updated>
+    <published>2020-02-18T06:44:18.787Z</published>
+    <updated>2020-02-18T06:42:35.314Z</updated>
     
     <summary type="html">
     
@@ -30,23 +30,10 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>新手小白零基础搭建个人博客（一）服务器篇/新手小白零基础搭建个人博客（一）服务器篇</title>
-    <link href="blog.ccuer.cn/2020/02/18/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/"/>
-    <id>blog.ccuer.cn/2020/02/18/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/</id>
-    <published>2020-02-18T06:13:17.602Z</published>
-    <updated>2020-02-17T16:22:30.270Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;搭建博客，第一步肯定就是要准备一个服务器了，除非你找到别人帮你代挂，这里给大家推荐阿里云的服务器。如果不想花钱，也可以使用Github进行代码托管，但是GitHub是国外服务器，读取速度肯定不如阿里云的服务器，将来网站反应会很慢。&lt;/p&gt;
-    
-    </summary>
+      <category term="生活随记" scheme="blog.ccuer.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E8%AE%B0/"/>
     
     
+      <category term="学习心得" scheme="blog.ccuer.cn/tags/%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/"/>
     
   </entry>
   
@@ -54,8 +41,8 @@
     <title>Hello World</title>
     <link href="blog.ccuer.cn/2020/02/18/hello-world/hello-world/"/>
     <id>blog.ccuer.cn/2020/02/18/hello-world/hello-world/</id>
-    <published>2020-02-18T06:13:17.592Z</published>
-    <updated>2020-02-14T07:28:17.470Z</updated>
+    <published>2020-02-18T06:44:18.777Z</published>
+    <updated>2020-02-18T06:43:13.393Z</updated>
     
     <summary type="html">
     
@@ -69,11 +56,30 @@
       <category term="test" scheme="blog.ccuer.cn/categories/test/"/>
     
     
-      <category term="666" scheme="blog.ccuer.cn/tags/666/"/>
+      <category term="test" scheme="blog.ccuer.cn/tags/test/"/>
     
-      <category term="777" scheme="blog.ccuer.cn/tags/777/"/>
+  </entry>
+  
+  <entry>
+    <title>新手小白零基础搭建个人博客（一）服务器篇</title>
+    <link href="blog.ccuer.cn/2020/02/18/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/"/>
+    <id>blog.ccuer.cn/2020/02/18/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/</id>
+    <published>2020-02-18T06:44:18.777Z</published>
+    <updated>2020-02-18T06:37:34.752Z</updated>
     
-      <category term="888" scheme="blog.ccuer.cn/tags/888/"/>
+    <summary type="html">
+    
+      &lt;p&gt;搭建博客，第一步肯定就是要准备一个服务器了，除非你找到别人帮你代挂，这里给大家推荐阿里云的服务器。如果不想花钱，也可以使用Github进行代码托管，但是GitHub是国外服务器，读取速度肯定不如阿里云的服务器，将来网站反应会很慢。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="博客搭建" scheme="blog.ccuer.cn/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="hexo" scheme="blog.ccuer.cn/tags/hexo/"/>
+    
+      <category term="云服务器" scheme="blog.ccuer.cn/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
