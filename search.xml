@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>新手小白零基础搭建个人博客（二）Hexo搭建</title>
+    <url>/2020/02/18/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Hexo%E6%90%AD%E5%BB%BA/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Hexo%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>之前已经给大家讲完了，如何准备一个阿里云服务器或者准备github代码托管，今天就给大家说说如何搭建hexo。</p>
+<a id="more"></a>
+<p>服务器用户请阅读1、3<br>github用户请阅读3<br>双管齐下用户请阅读1、2、3</p>
+<ul>
+<li>1.本文使用了hexo框架，因此，如果是服务器的用户，需要在服务器端进行的操作有：开放端口、安装nginx、安装git、安装Node.js</li>
+<li>2.如果是github用户，只需要创建一个仓库即可（<a href="https://blog.csdn.net/weixin_43781426/article/details/104351340" target="_blank" rel="noopener">上一篇博文</a>已说）</li>
+<li>3.在本机即你手里的电脑（我用的WIN10系统）需要进行的操作有：安装Node.js、安装git、安装Hexo</li>
+</ul>
+<h2 id="一-服务器端操作"><a href="#一-服务器端操作" class="headerlink" title="一.服务器端操作"></a>一.服务器端操作</h2><p> <strong>1. 开放端口</strong><br>    上一篇博文已经说过开放8888端口，如果对于怎么开放端口有疑问，具体操作方法可以参考阿里云文档，或自行百度。现在我们需要给服务器，再开放一个80端口，有的服务器默认是已经打开了的，检查一下，如果没打开，就自己添加。<img src="https://img-blog.csdnimg.cn/20200218155246184.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzc4MTQyNg==,size_16,color_FFFFFF,t_70#pic_center" alt="开放端口"></p>
+<p> <strong>2. 查看nginx默认地址</strong><br>  首先登陆你的宝塔面板，如果是由上一篇博文到这里的，默认登录地址就是：“你的服务器IP:8888/安全登录入口”。这里忘记说了，之前第一次登陆的时候可能让你选择一键套件，这个时候我们选择LNMP,即含有nginx的那个。进入软件商店，查看一下是否含有nginx，如果没有可以搜索安装。 <img src="https://img-blog.csdnimg.cn/2020021816000956.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzc4MTQyNg==,size_16,color_FFFFFF,t_70#pic_center" alt="宝塔软件"><br>  点击nginx，找到配置修改，然后往下翻，找server，就可以看到pid后面接的进程地址了，默认应该是/www/server/nginx/某某某。我们只要找到nginx的安装地址即可，那就是/www/server/nginx/<br>  <img src="https://img-blog.csdnimg.cn/20200218163324471.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzc4MTQyNg==,size_16,color_FFFFFF,t_70" alt="nginx"><br>  那我们就新建一个文件夹，用于存放我们的博客文件，路径为默认安装地址后面接blog，当然你也可以另起名字，在你的电脑上使用Xshell连接你的服务器，键入以下代码</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">mkdir /www/server/nginx/blog</span><br></pre></td></tr></table></figure>
+<p>然后在宝塔面板——网站——添加站点，域名填公网ip，根目录选到我们创建的文件夹，点击创建。<img src="https://img-blog.csdnimg.cn/20200218164029377.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzc4MTQyNg==,size_16,color_FFFFFF,t_70#pic_center" alt="nginx配置"><br>到这里，我们的服务器端的nginx就算装完了。<br><strong>3. 安装Git和Node.js</strong><br>电脑使用Xshell连接服务器进行如下操作<br><strong><em>Node</em></strong></p>
+<ol>
+<li>下载Node.js<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">wget https://nodejs.org/dist/v10.<span class="number">5.0</span>/node<span class="literal">-v10</span>.<span class="number">5.0</span><span class="literal">-linux</span><span class="literal">-x64</span>.tar.xz</span><br></pre></td></tr></table></figure></li>
+<li>解压Node.js<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">tar <span class="literal">-xvJf</span> node<span class="literal">-v10</span>.<span class="number">5.0</span><span class="literal">-linux</span><span class="literal">-x64</span>.tar.xz</span><br><span class="line">mv node<span class="literal">-v10</span>.<span class="number">5.0</span><span class="literal">-linux</span><span class="literal">-x64</span> node</span><br></pre></td></tr></table></figure></li>
+<li>配置环境变量</li>
+</ol>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">mv node/ /usr/local/</span><br><span class="line">vim ~/.bash_profile</span><br></pre></td></tr></table></figure>
+<p><em>增加以下内容</em></p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">export NODE_HOME=/usr/local/node      <span class="comment">#node路径</span></span><br><span class="line">export PATH=<span class="variable">$NODE_HOME</span>/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>更新配置</li>
+</ol>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure>
+<p><em>测试是否配置正确</em></p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">node <span class="literal">-v</span></span><br></pre></td></tr></table></figure>
+<p>返回node的版本号即为安装正确<img src="https://img-blog.csdnimg.cn/20200218164806952.png#pic_center" alt="node版本"><br><strong><em>Git</em></strong></p>
+<ol>
+<li>安装Git</li>
+</ol>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">yum install <span class="literal">-y</span> git</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>创建git用户并为其设置密码</li>
+</ol>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">adduser git <span class="comment">#创建用户</span></span><br><span class="line">passwd git  <span class="comment">#设置密码</span></span><br></pre></td></tr></table></figure>
+
+<p>到这里我们服务器操作暂时停一停，因为我们需要一些本地电脑上的操作才能完成</p>
+<h2 id="二-本机操作"><a href="#二-本机操作" class="headerlink" title="二.本机操作"></a>二.本机操作</h2><p><strong><em>请注意！到这里，你可以暂时关闭你的Xshell，宝塔面板等有关服务器的页面，以下操作均为本地电脑操作，即你手上的电脑</em></strong></p>
+<ol>
+<li>安装GitBash<br>下载地址：<a href="http://www.git-scm.com/download/" target="_blank" rel="noopener">GitBash</a><br>安装方法基本上就是一直next，这里不做过多描述。<br>在电脑桌面上（其他位置也可以，我只是图方便），新建一个blog文件夹，用于存放文件。创建以后打开文件夹，在文件夹内右键，会有Git Bash Here，点击即可打开Git Bash界面<img src="https://img-blog.csdnimg.cn/20200218170959297.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzc4MTQyNg==,size_16,color_FFFFFF,t_70#pic_center" alt="GitBash"></li>
+<li>安装node<br>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a><br>安装过程基本直接 下一步 就可以了。<br>安装完成后，在git bash中查看是否安装成功<img src="https://img-blog.csdnimg.cn/20200218171217744.png#pic_center" alt="git-node"><br>出现版本号即为安装成功。</li>
+<li>安装hexo<br>npm是指令使用的是国外的服务器，在国内使用经常出现卡顿的现象，因此我们可以将npm换成淘宝的服务器，在git bash中输入：</li>
+</ol>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br><span class="line"><span class="comment"># 然后安装cnpm</span></span><br><span class="line">npm install <span class="literal">-g</span> cnpm -<span class="literal">-registry</span>=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>可以检查一下cnpm有没有安装成功，在git bash中输入：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">cnpm <span class="literal">-v</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200218171915418.png#pic_center" alt="cnpm"><br>使用cnpm安装hexo，在git bash中输入：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">cnpm install <span class="literal">-g</span> hexo<span class="literal">-cli</span></span><br></pre></td></tr></table></figure>
+<p>检查是否安装成功，在git bash中输入：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo <span class="literal">-v</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200218172237655.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzc4MTQyNg==,size_16,color_FFFFFF,t_70#pic_center" alt="hexo -v"><br>至此我们的hexo已经安装完成。可以进行初始化：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>然后安装两个Hexo插件(只需安装一次，以后在新的文件夹创建新的博客时直接hexo init 即可)：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm install hexo<span class="literal">-deployer</span><span class="literal">-git</span> -<span class="literal">-save</span></span><br><span class="line">npm install hexo<span class="literal">-server</span></span><br></pre></td></tr></table></figure>
+<p>这个时候，我们就可以在本机上预览了</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>打开浏览器访问 <code>http://localhost:4000或者127.0.0.1:4000</code><br>是不是看到了你自己搭建的博客了，至此，hexo的本机部署已经完成，下一期，我将会教大家如何将hexo部署到阿里云服务器以及github代码托管。</p>
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>云服务器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>记第一次搭建个人博客</title>
     <url>/2020/02/18/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h2><p>博主目前还是大学生，身为当代丑恶大学生，博主也过着和大多数人一样的每天吃吃喝喝，不思进取的生活，但是一年前的某一天，就意识到就业形势的严峻，突然萌生了学习技术的想法，于是便开始了自学的道路。</p>
