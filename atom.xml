@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.ccuer.cn/"/>
-  <updated>2020-02-18T09:42:05.483Z</updated>
+  <updated>2020-02-24T15:37:59.154Z</updated>
   <id>blog.ccuer.cn/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Oracle 11g 下载及安装教程</title>
+    <link href="blog.ccuer.cn/2020/02/24/Oracle-11g-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Oracle%2011g%20%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>blog.ccuer.cn/2020/02/24/Oracle-11g-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Oracle%2011g%20%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
+    <published>2020-02-24T15:11:07.157Z</published>
+    <updated>2020-02-24T15:37:59.154Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载Oracle 11g R2 for Windows版本，官网的下载地址：&lt;br&gt;&lt;a href=&quot;http://download.oracle.com/otn/nt/oracle11g/112010/win32_11gR2_database_1of2.zip&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Oracle 1of 2&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://download.oracle.com/otn/nt/oracle11g/112010/win32_11gR2_database_2of2.zip&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Oracle 2of 2&lt;/a&gt;&lt;br&gt;但是亲测该服务器为美国服务器，下载速度简直不要太难受，因此附上网盘链接——&lt;a href=&quot;https://pan.baidu.com/s/1BTnd8CtJrZfD3YAZI0_AQg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Oracle百度网盘下载地址(点击自动跳转)&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://pan.baidu.com/s/1BTnd8CtJrZfD3YAZI0_AQg，提取码：eder&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1BTnd8CtJrZfD3YAZI0_AQg，提取码：eder&lt;/a&gt;.&lt;br&gt;如果有会员的同学可以欢快的下载啦，没有百度网盘会员的同学不要灰心，私聊博主，我给你们一个小诀窍，让你没有百度网盘网速的限制&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;百度网盘文件下载好以后，解压缩可以看到里面有
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="blog.ccuer.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="blog.ccuer.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="oracle" scheme="blog.ccuer.cn/tags/oracle/"/>
+    
+  </entry>
   
   <entry>
     <title>新手小白零基础搭建个人博客（二）Hexo搭建</title>
