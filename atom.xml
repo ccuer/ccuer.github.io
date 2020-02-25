@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.ccuer.cn/"/>
-  <updated>2020-02-24T15:37:59.154Z</updated>
+  <updated>2020-02-25T07:55:43.377Z</updated>
   <id>blog.ccuer.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数学建模神器——Matlab下载安装教程</title>
+    <link href="blog.ccuer.cn/2020/02/25/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>blog.ccuer.cn/2020/02/25/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
+    <published>2020-02-25T07:56:55.123Z</published>
+    <updated>2020-02-25T07:55:43.377Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、下载matlab&quot;&gt;&lt;a href=&quot;#一、下载matlab&quot; class=&quot;headerlink&quot; title=&quot;一、下载matlab&quot;&gt;&lt;/a&gt;一、下载matlab&lt;/h2&gt;&lt;p&gt;本文给大家提供2016b版本的下载及安装，关于matlab的版本问题，众说纷纭，说什么的都有，但是博主本人在学校参加3年建模都是用的2016b，早已产生“感情”，并且也没发现什么确定，一直都挺稳定的，相比于在学校学的2014a来说，还是很不错的&lt;br&gt;1.废话不多说，直接上&lt;a href=&quot;https://pan.baidu.com/s/1RVZhIoFoeXOTtOmiQSoadw&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;百度网盘链接&lt;/a&gt;：链接:&lt;a href=&quot;https://pan.baidu.com/s/1RVZhIoFoeXOTtOmiQSoadw&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1RVZhIoFoeXOTtOmiQSoadw&lt;/a&gt; 提取码:53w0&lt;br&gt;2.下载完成后打开文件夹，可以看到有这三个文件&lt;br&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20200225145720605.png&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;br&gt;2.将dvd1的压缩包解压缩，得到一个R2016b_win64_dvd1的文件夹
+    
+    </summary>
+    
+    
+      <category term="数学建模" scheme="blog.ccuer.cn/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+    
+    
+      <category term="数学建模" scheme="blog.ccuer.cn/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+    
+      <category term="Matlab" scheme="blog.ccuer.cn/tags/Matlab/"/>
+    
+  </entry>
   
   <entry>
     <title>Oracle 11g 下载及安装教程</title>
