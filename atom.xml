@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.ccuer.cn/"/>
-  <updated>2020-02-25T07:55:43.377Z</updated>
+  <updated>2020-02-26T14:52:09.029Z</updated>
   <id>blog.ccuer.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Oracle 11g 下载及安装教程</title>
+    <link href="blog.ccuer.cn/2020/02/26/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/"/>
+    <id>blog.ccuer.cn/2020/02/26/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/</id>
+    <published>2020-02-26T14:52:43.747Z</published>
+    <updated>2020-02-26T14:52:09.029Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;p&gt;昨天已经发了一个如何安装Oracle的博客，如果认真按照步骤做的同学，相信都能安装好。最后结尾的时候我放了一张连上数据库的截图，那张截图是使用OEM的，今天教大家如何使用SQLdeveloper、SQLplusr连接管理我们的数据库。&lt;/p&gt;
+&lt;h2 id=&quot;二、下载SQLdeveloper&quot;&gt;&lt;a href=&quot;#二、下载SQLdeveloper&quot; class=&quot;headerlink&quot; title=&quot;二、下载SQLdeveloper&quot;&gt;&lt;/a&gt;二、下载SQLdeveloper&lt;/h2&gt;&lt;p&gt;如果细心地同学会发现，其实SQLdeveloper的安装文件我已经给大家发了
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="blog.ccuer.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="blog.ccuer.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="oracle" scheme="blog.ccuer.cn/tags/oracle/"/>
+    
+  </entry>
   
   <entry>
     <title>数学建模神器——Matlab下载安装教程</title>
