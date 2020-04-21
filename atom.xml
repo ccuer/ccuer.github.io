@@ -68,34 +68,77 @@
   </entry>
   
   <entry>
-    <title>Oracle 11g 下载及安装教程</title>
-    <link href="blog.ccuer.cn/2020/02/26/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/"/>
-    <id>blog.ccuer.cn/2020/02/26/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/</id>
-    <published>2020-02-26T14:52:43.747Z</published>
-    <updated>2020-02-26T14:52:09.029Z</updated>
+    <title>记第一次搭建个人博客</title>
+    <link href="blog.ccuer.cn/2020/04/16/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>blog.ccuer.cn/2020/04/16/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-04-16T14:33:22.182Z</published>
+    <updated>2020-02-18T06:42:35.314Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;p&gt;昨天已经发了一个如何安装Oracle的博客，如果认真按照步骤做的同学，相信都能安装好。最后结尾的时候我放了一张连上数据库的截图，那张截图是使用OEM的，今天教大家如何使用SQLdeveloper、SQLplusr连接管理我们的数据库。&lt;/p&gt;
-&lt;h2 id=&quot;二、下载SQLdeveloper&quot;&gt;&lt;a href=&quot;#二、下载SQLdeveloper&quot; class=&quot;headerlink&quot; title=&quot;二、下载SQLdeveloper&quot;&gt;&lt;/a&gt;二、下载SQLdeveloper&lt;/h2&gt;&lt;p&gt;如果细心地同学会发现，其实SQLdeveloper的安装文件我已经给大家发了
+      &lt;h2 id=&quot;个人简介&quot;&gt;&lt;a href=&quot;#个人简介&quot; class=&quot;headerlink&quot; title=&quot;个人简介&quot;&gt;&lt;/a&gt;个人简介&lt;/h2&gt;&lt;p&gt;博主目前还是大学生，身为当代丑恶大学生，博主也过着和大多数人一样的每天吃吃喝喝，不思进取的生活，但是一年前的某一天，就意识到就业形势的严峻，突然萌生了学习技术的想法，于是便开始了自学的道路。&lt;/p&gt;
     
     </summary>
     
     
-      <category term="数据库" scheme="blog.ccuer.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="生活随记" scheme="blog.ccuer.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E8%AE%B0/"/>
     
     
-      <category term="数据库" scheme="blog.ccuer.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="学习心得" scheme="blog.ccuer.cn/tags/%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/"/>
     
-      <category term="oracle" scheme="blog.ccuer.cn/tags/oracle/"/>
+  </entry>
+  
+  <entry>
+    <title>新手小白零基础搭建个人博客（二）Hexo搭建</title>
+    <link href="blog.ccuer.cn/2020/04/16/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Hexo%E6%90%AD%E5%BB%BA/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Hexo%E6%90%AD%E5%BB%BA/"/>
+    <id>blog.ccuer.cn/2020/04/16/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Hexo%E6%90%AD%E5%BB%BA/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Hexo%E6%90%AD%E5%BB%BA/</id>
+    <published>2020-04-16T14:33:22.177Z</published>
+    <updated>2020-02-18T09:42:05.483Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前已经给大家讲完了，如何准备一个阿里云服务器或者准备github代码托管，今天就给大家说说如何搭建hexo。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="博客搭建" scheme="blog.ccuer.cn/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="hexo" scheme="blog.ccuer.cn/tags/hexo/"/>
+    
+      <category term="云服务器" scheme="blog.ccuer.cn/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新手小白零基础搭建个人博客（一）服务器篇</title>
+    <link href="blog.ccuer.cn/2020/04/16/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/"/>
+    <id>blog.ccuer.cn/2020/04/16/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/</id>
+    <published>2020-04-16T14:33:22.173Z</published>
+    <updated>2020-02-18T06:37:34.752Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;搭建博客，第一步肯定就是要准备一个服务器了，除非你找到别人帮你代挂，这里给大家推荐阿里云的服务器。如果不想花钱，也可以使用Github进行代码托管，但是GitHub是国外服务器，读取速度肯定不如阿里云的服务器，将来网站反应会很慢。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="博客搭建" scheme="blog.ccuer.cn/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="hexo" scheme="blog.ccuer.cn/tags/hexo/"/>
+    
+      <category term="云服务器" scheme="blog.ccuer.cn/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
   <entry>
     <title>数学建模神器——Matlab下载安装教程</title>
-    <link href="blog.ccuer.cn/2020/02/25/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
-    <id>blog.ccuer.cn/2020/02/25/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
-    <published>2020-02-25T07:56:55.123Z</published>
+    <link href="blog.ccuer.cn/2020/04/16/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>blog.ccuer.cn/2020/04/16/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Matlab%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
+    <published>2020-04-16T14:33:22.167Z</published>
     <updated>2020-02-25T07:55:43.377Z</updated>
     
     <summary type="html">
@@ -116,9 +159,9 @@
   
   <entry>
     <title>Oracle 11g 下载及安装教程</title>
-    <link href="blog.ccuer.cn/2020/02/24/Oracle-11g-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Oracle%2011g%20%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
-    <id>blog.ccuer.cn/2020/02/24/Oracle-11g-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Oracle%2011g%20%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
-    <published>2020-02-24T15:11:07.157Z</published>
+    <link href="blog.ccuer.cn/2020/04/16/Oracle-11g-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Oracle%2011g%20%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>blog.ccuer.cn/2020/04/16/Oracle-11g-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Oracle%2011g%20%E4%B8%8B%E8%BD%BD%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
+    <published>2020-04-16T14:33:22.161Z</published>
     <updated>2020-02-24T15:37:59.154Z</updated>
     
     <summary type="html">
@@ -141,54 +184,34 @@
   </entry>
   
   <entry>
-    <title>新手小白零基础搭建个人博客（二）Hexo搭建</title>
-    <link href="blog.ccuer.cn/2020/02/18/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Hexo%E6%90%AD%E5%BB%BA/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Hexo%E6%90%AD%E5%BB%BA/"/>
-    <id>blog.ccuer.cn/2020/02/18/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Hexo%E6%90%AD%E5%BB%BA/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Hexo%E6%90%AD%E5%BB%BA/</id>
-    <published>2020-02-18T09:33:52.152Z</published>
-    <updated>2020-02-18T09:42:05.483Z</updated>
+    <title>Oracle 11g 下载及安装教程</title>
+    <link href="blog.ccuer.cn/2020/04/16/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/"/>
+    <id>blog.ccuer.cn/2020/04/16/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/Oracle%2011g%20%E5%AE%89%E8%A3%85%E5%90%8E%E7%BB%AD%E2%80%94%E2%80%94%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%AF%87/</id>
+    <published>2020-04-16T14:33:22.154Z</published>
+    <updated>2020-02-26T14:52:09.029Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;之前已经给大家讲完了，如何准备一个阿里云服务器或者准备github代码托管，今天就给大家说说如何搭建hexo。&lt;/p&gt;
+      &lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;p&gt;昨天已经发了一个如何安装Oracle的博客，如果认真按照步骤做的同学，相信都能安装好。最后结尾的时候我放了一张连上数据库的截图，那张截图是使用OEM的，今天教大家如何使用SQLdeveloper、SQLplusr连接管理我们的数据库。&lt;/p&gt;
+&lt;h2 id=&quot;二、下载SQLdeveloper&quot;&gt;&lt;a href=&quot;#二、下载SQLdeveloper&quot; class=&quot;headerlink&quot; title=&quot;二、下载SQLdeveloper&quot;&gt;&lt;/a&gt;二、下载SQLdeveloper&lt;/h2&gt;&lt;p&gt;如果细心地同学会发现，其实SQLdeveloper的安装文件我已经给大家发了
     
     </summary>
     
     
-      <category term="博客搭建" scheme="blog.ccuer.cn/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+      <category term="数据库" scheme="blog.ccuer.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="hexo" scheme="blog.ccuer.cn/tags/hexo/"/>
+      <category term="数据库" scheme="blog.ccuer.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="云服务器" scheme="blog.ccuer.cn/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>记第一次搭建个人博客</title>
-    <link href="blog.ccuer.cn/2020/02/18/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>blog.ccuer.cn/2020/02/18/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
-    <published>2020-02-18T06:44:18.787Z</published>
-    <updated>2020-02-18T06:42:35.314Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;个人简介&quot;&gt;&lt;a href=&quot;#个人简介&quot; class=&quot;headerlink&quot; title=&quot;个人简介&quot;&gt;&lt;/a&gt;个人简介&lt;/h2&gt;&lt;p&gt;博主目前还是大学生，身为当代丑恶大学生，博主也过着和大多数人一样的每天吃吃喝喝，不思进取的生活，但是一年前的某一天，就意识到就业形势的严峻，突然萌生了学习技术的想法，于是便开始了自学的道路。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="生活随记" scheme="blog.ccuer.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E8%AE%B0/"/>
-    
-    
-      <category term="学习心得" scheme="blog.ccuer.cn/tags/%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/"/>
+      <category term="oracle" scheme="blog.ccuer.cn/tags/oracle/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="blog.ccuer.cn/2020/02/18/hello-world/hello-world/"/>
-    <id>blog.ccuer.cn/2020/02/18/hello-world/hello-world/</id>
-    <published>2020-02-18T06:44:18.777Z</published>
+    <link href="blog.ccuer.cn/2020/04/16/hello-world/hello-world/"/>
+    <id>blog.ccuer.cn/2020/04/16/hello-world/hello-world/</id>
+    <published>2020-04-16T14:33:22.150Z</published>
     <updated>2020-02-18T06:43:13.393Z</updated>
     
     <summary type="html">
@@ -204,29 +227,6 @@
     
     
       <category term="test" scheme="blog.ccuer.cn/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>新手小白零基础搭建个人博客（一）服务器篇</title>
-    <link href="blog.ccuer.cn/2020/02/18/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/"/>
-    <id>blog.ccuer.cn/2020/02/18/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/</id>
-    <published>2020-02-18T06:44:18.777Z</published>
-    <updated>2020-02-18T06:37:34.752Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;搭建博客，第一步肯定就是要准备一个服务器了，除非你找到别人帮你代挂，这里给大家推荐阿里云的服务器。如果不想花钱，也可以使用Github进行代码托管，但是GitHub是国外服务器，读取速度肯定不如阿里云的服务器，将来网站反应会很慢。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="博客搭建" scheme="blog.ccuer.cn/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    
-      <category term="hexo" scheme="blog.ccuer.cn/tags/hexo/"/>
-    
-      <category term="云服务器" scheme="blog.ccuer.cn/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
