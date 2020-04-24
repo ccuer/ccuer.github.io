@@ -64,7 +64,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">1.7k字</span>
+            <span class="post-count">1.8k字</span>
         </span>
     </span>
 
@@ -73,7 +73,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">7分钟</span>
+            <span class="post-count">8分钟</span>
         </span>
     </span>
 </div>
@@ -101,7 +101,44 @@
 
       
       <p>列表在html中至关重要，通常用于各种分类页面，以某宝为例，其主页面有大部分涉及到列表（绿色标注区域）</p>
-<p><img src="https://img-blog.csdnimg.cn/20200424155217485.png?#pic_center" alt="在这里插入图片描述"><br>列表有很多种<br>标签     |描述<br>——– | —–<br><code>&lt;ul&gt;</code>  | 无序列表<br><code>&lt;ol&gt;</code>| 有序列表<a id="more"></a><br><code>&lt;dir&gt;</code>  | 目录列表<br><code>&lt;dl&gt;</code>  | 定义列表<br><code>&lt;menu&gt;</code>  | 菜单列表<br><code>&lt;dt&gt;</code> 、<code>&lt;dd&gt;</code> | 定义列表的标签<br><code>&lt;li&gt;</code>  | 列表项目的标签</p>
+<p><img src="https://img-blog.csdnimg.cn/20200424155217485.png?#pic_center" alt="在这里插入图片描述"><br>列表有很多种</p>
+<table>
+<thead>
+<tr>
+<th align="center">标签</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>&lt;ul&gt;</code></td>
+<td align="center">无序列表</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;ol&gt;</code></td>
+<td align="center">有序列表</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;dir&gt;</code></td>
+<td align="center">目录列表</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;dl&gt;</code></td>
+<td align="center">定义列表</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;menu&gt;</code></td>
+<td align="center">菜单列表</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;dt&gt;</code> 、<code>&lt;dd&gt;</code></td>
+<td align="center">定义列表的标签</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;li&gt;</code></td>
+<td align="center">列表项目的标签</td>
+</tr>
+</tbody></table>
+<a id="more"></a>
 <p>实际当中常用的列表主要是<strong>无序列表</strong>和<strong>有序列表</strong>两种</p>
 <p>本文将主要对两种列表分别解释</p>
 <h1 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h1><p>有序列表，不分先后，没有顺序的列表项目，但默认每个列表前会有一个标识符号，例如：<br><img src="https://img-blog.csdnimg.cn/20200424231114646.png#pic_center" alt="在这里插入图片描述"></p>
@@ -112,13 +149,13 @@
 <p>由上述例子可以发现，既可以对单个li标签项目进行设置，也可以在ul标签中对所有项目进行设置，单个li标签的type属性会覆盖ul列表上设置的type。</p>
 <p>type 的属性值一共有4种：</p>
 <ul>
-<li><p>disc         ●</p>
+<li><p>disc——————展现形式：●</p>
 </li>
-<li><p>square    ■</p>
+<li><p>square————展现形式：■</p>
 </li>
-<li><p>circle      ○</p>
+<li><p>circle————展现形式：○</p>
 </li>
-<li><p>none</p>
+<li><p>none——————无标识符</p>
 </li>
 <li><p>默认属性是disc</p>
 <p>实际应用中，如果无特殊需求，一般在ul上设置css样式：<code>list-style:none;</code>用以清除列表项目的标识符号</p>
@@ -135,29 +172,29 @@
 <table>
 <thead>
 <tr>
-<th>type取值</th>
-<th>序号类型</th>
+<th align="center">type取值</th>
+<th align="center">序号类型</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>1</td>
-<td>数字1,2,3,4</td>
+<td align="center">1</td>
+<td align="center">数字1,2,3,4</td>
 </tr>
 <tr>
-<td>a</td>
-<td>英文字母a,b,c,d</td>
+<td align="center">a</td>
+<td align="center">英文字母a,b,c,d</td>
 </tr>
 <tr>
-<td>A</td>
-<td>英文字母A,B,C,D</td>
+<td align="center">A</td>
+<td align="center">英文字母A,B,C,D</td>
 </tr>
 <tr>
-<td>i</td>
-<td>罗马数字ⅰ,ⅱ,ⅲ,ⅳ</td>
+<td align="center">i</td>
+<td align="center">罗马数字ⅰ,ⅱ,ⅲ,ⅳ</td>
 </tr>
 <tr>
-<td>I</td>
-<td>罗马数字Ⅰ,Ⅱ,Ⅲ,Ⅳ</td>
+<td align="center">I</td>
+<td align="center">罗马数字Ⅰ,Ⅱ,Ⅲ,Ⅳ</td>
 </tr>
 </tbody></table>
 <h1 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h1><p>列表的嵌套是为了完成多级项目列表，其主要意思是在一层列表下再创建一级或者n级列表，听起来有点想目录的意思，一级标签，二级标签…</p>
