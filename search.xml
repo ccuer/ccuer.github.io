@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>新手小白零基础搭建个人博客（三）部署篇</title>
+    <url>/2020/04/25/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89%E9%83%A8%E7%BD%B2%E7%AF%87/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89%E9%83%A8%E7%BD%B2%E7%AF%87/</url>
+    <content><![CDATA[<h1 id="搭建本地hexo服务"><a href="#搭建本地hexo服务" class="headerlink" title="搭建本地hexo服务"></a>搭建本地hexo服务</h1><p>搭建本地hexo服务可以参见我之前的博客，这里不再赘述。</p>
+<h1 id="获取SSH-KEY"><a href="#获取SSH-KEY" class="headerlink" title="获取SSH KEY"></a>获取SSH KEY</h1><ol>
+<li>在自己的电脑上，获取SSH Key</li>
+<li>在服务器上切换至git用户，添加SSH Key</li>
+<li>在客户端查看并复制客户端的SSH Keys<a id="more"></a></li>
+</ol>
+<p><strong>注意这是在客户端git bash执行</strong><br><code>cat ~/.ssh/id_rsa.pub</code><br>将内容复制下，下面要用。</p>
+<p><strong>这是在服务器端执行的</strong><br><code>su git</code>  #切换用户<br><code>mkdir ~/.ssh</code>    #创建目录<br><code>vim ~/.ssh/authorized_keys</code>  #将刚刚复制的内容写进去 </p>
+<p>为刚刚的文件和目录设置权限</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chmod 600 ~/.ssh/authorozed_keys</span><br><span class="line">chmod 700 ~/.ssh</span><br></pre></td></tr></table></figure>
+
+<p><strong>在客户端测试是否能连接服务器</strong><br>终端输入以下命令，如果成功登录则配置成功。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -v git@your_server_ip <span class="comment">#注意更改你自己的服务器ip</span></span><br></pre></td></tr></table></figure>
+
+<p>将博客发布目录的属主属组改为git</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chown -R git:git /usr/share/nginx/blog</span><br></pre></td></tr></table></figure>
+
+<p>初始化Git仓库</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">su git</span><br><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">git init --bare blog.git    <span class="comment">#使用--bare参数，Git就会创建一个裸库。</span></span><br></pre></td></tr></table></figure>
+
+<p>配置git hooks</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim ~/blog.git/hooks/post-receive</span><br></pre></td></tr></table></figure>
+
+<p>在post-receive中写入以下内容:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">git --work-tree=/usr/share/nginx/blog --git-dir=/home/git/blog.git checkout -f</span><br></pre></td></tr></table></figure>
+
+<p>赋予其执行权限</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chmod +x ~/blog.git/hooks/post-rceive</span><br></pre></td></tr></table></figure>
+
+<p>配置<strong>博客根目录</strong>的主配置文件<br>编辑<strong>博客根目录</strong>下的_config.yml</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@your_server_ip:/home/git/blog.git <span class="comment">#注意改成自己的服务器ip</span></span><br><span class="line">  branch: master</span><br><span class="line">  message:</span><br></pre></td></tr></table></figure>
+
+<p>在博客主目录执行以下命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>部署完成后就可以在浏览器输入你的域名访问你的博客了。</p>
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>云服务器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML+CSS+JavaScript复习笔记持更（二）——列表篇</title>
     <url>/2020/04/25/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E7%AF%87/</url>
     <content><![CDATA[<p>列表在html中至关重要，通常用于各种分类页面，以某宝为例，其主页面有大部分涉及到列表（绿色标注区域）</p>
