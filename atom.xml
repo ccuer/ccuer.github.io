@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.ccuer.cn/"/>
-  <updated>2020-04-25T07:01:51.110Z</updated>
+  <updated>2020-04-25T16:25:39.297Z</updated>
   <id>blog.ccuer.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML+CSS+JavaScript复习笔记持更（三）——表单篇</title>
+    <link href="blog.ccuer.cn/2020/04/26/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E8%A1%A8%E5%8D%95%E7%AF%87/"/>
+    <id>blog.ccuer.cn/2020/04/26/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E8%A1%A8%E5%8D%95%E7%AF%87/</id>
+    <published>2020-04-25T16:18:54.409Z</published>
+    <updated>2020-04-25T16:25:39.297Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;表单概述&quot;&gt;&lt;a href=&quot;#表单概述&quot; class=&quot;headerlink&quot; title=&quot;表单概述&quot;&gt;&lt;/a&gt;表单概述&lt;/h1&gt;&lt;p&gt;表单在网页中经常可见，基本上所有的需要提交收集信息的网站都需要用到表单，最常见的就是各种网站的登录页面，一个登陆页面最主要的就是各种表单元素的收集，表单主要使用form标签来完成&lt;/p&gt;
+&lt;h2 id=&quot;表单简介&quot;&gt;&lt;a href=&quot;#表单简介&quot; class=&quot;headerlink&quot; title=&quot;表单简介&quot;&gt;&lt;/a&gt;表单简介&lt;/h2&gt;&lt;p&gt;  表单通常设计在HTML中，当用户按照提示信息填写完成后，浏览器通将信息提交到后台服务器上，经过服务器的处理验证后，再将用户需要的信息传回，这样就完成一个交互。&lt;/p&gt;
+&lt;p&gt;  表单在这里最主要的功能就是收集信息，具体来说是收集浏览者的信息，例如各种登录界面，筛选，搜索等模块，
+    
+    </summary>
+    
+    
+      <category term="HTML+CSS+JS复习笔记" scheme="blog.ccuer.cn/categories/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="html" scheme="blog.ccuer.cn/tags/html/"/>
+    
+      <category term="css" scheme="blog.ccuer.cn/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>新手小白零基础搭建个人博客（三）部署篇</title>

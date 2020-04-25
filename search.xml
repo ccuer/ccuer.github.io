@@ -1,6 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML+CSS+JavaScript复习笔记持更（三）——表单篇</title>
+    <url>/2020/04/26/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E8%A1%A8%E5%8D%95%E7%AF%87/</url>
+    <content><![CDATA[<h1 id="表单概述"><a href="#表单概述" class="headerlink" title="表单概述"></a>表单概述</h1><p>表单在网页中经常可见，基本上所有的需要提交收集信息的网站都需要用到表单，最常见的就是各种网站的登录页面，一个登陆页面最主要的就是各种表单元素的收集，表单主要使用form标签来完成</p>
+<h2 id="表单简介"><a href="#表单简介" class="headerlink" title="表单简介"></a>表单简介</h2><p>  表单通常设计在HTML中，当用户按照提示信息填写完成后，浏览器通将信息提交到后台服务器上，经过服务器的处理验证后，再将用户需要的信息传回，这样就完成一个交互。</p>
+<p>  表单在这里最主要的功能就是收集信息，具体来说是收集浏览者的信息，例如各种登录界面，筛选，搜索等模块，<a id="more"></a>在表单元素中，最常用的就是文本框、密码框、单选按钮、复选框等</p>
+<p>  举例，大学慕课的登录页面：<br>  <img src="https://img-blog.csdnimg.cn/2020042515202452.png#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="form-标签"><a href="#form-标签" class="headerlink" title="form 标签"></a>form 标签</h3><p>表单是html页面中的某个区域，而这个区域有form标签进行划分，form是双标签，所有的表单元素和必要的提示信息，都必须写在form标签中。语法格式如下：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">method</span>=<span class="string">""</span> <span class="attr">enctype</span>=<span class="string">""</span> <span class="attr">target</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">         用户名：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">         密码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在form标签中还可以设置表单的基本属性，包括表单的名称、处理程序、传送方式等，各属性值含义如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">form属性</th>
+<th align="center">含义</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">action</td>
+<td align="center">表单的处理程序，即收到表单后需要传送到什么地址</td>
+<td align="center">这个地址可以是绝对地址，也可以是相对地址，也可以是E-mail邮箱地址</td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">表单的名称</td>
+<td align="center">防止后台多个表单互相错乱，表单名称最好与实际作用有关</td>
+</tr>
+<tr>
+<td align="center">method</td>
+<td align="center">处理程序从表单中获取信息的方式，有get（默认）和post两个值</td>
+<td align="center">get方式会被视为CGI或者ASP的参数发送<br>post方法指表单数据与URL分开发送，用户端的计算机会通知服务器来读取数据</td>
+</tr>
+<tr>
+<td align="center">enctype</td>
+<td align="center">r表单信息的编码方式有三个属性值<br>text/plain<br>application/x-www-form-urlencoded<br>multipart/form-data</td>
+<td align="center">第一种是纯文本形式传送<br>第二种是默认的编码格式<br>第三种是MIME编码，上传文件的表单必须用着这个编码</td>
+</tr>
+<tr>
+<td align="center">target</td>
+<td align="center">目标窗口的打开方式</td>
+<td align="center">与a链接标签的target属性相同</td>
+</tr>
+</tbody></table>
+<p>提供一个登录页面的小案例：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- html部分 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>欢迎登录<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">method</span>=<span class="string">""</span> <span class="attr">enctype</span>=<span class="string">""</span> <span class="attr">target</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">""</span> <span class="attr">class</span>=<span class="string">"name"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">p</span>&gt;</span>用户名：<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">""</span> <span class="attr">class</span>=<span class="string">"pass"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">p</span>&gt;</span>密码：<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">""</span> <span class="attr">class</span>=<span class="string">"ok"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* css部分 */</span></span><br><span class="line">     *&#123;</span><br><span class="line">         <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">         <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="selector-class">.box</span>&#123;</span><br><span class="line">         <span class="attribute">width</span>: <span class="number">600px</span>;</span><br><span class="line">         <span class="attribute">height</span>: <span class="number">600px</span>;</span><br><span class="line">         <span class="attribute">background-color</span>: chartreuse;</span><br><span class="line">         <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="selector-class">.box</span> <span class="selector-tag">h2</span>&#123;</span><br><span class="line">         <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">         <span class="attribute">text-align</span>: center;</span><br><span class="line">         <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="selector-class">.box</span> <span class="selector-tag">p</span>&#123;</span><br><span class="line">         <span class="attribute">width</span>: <span class="number">80px</span>;</span><br><span class="line">         <span class="attribute">float</span>: left;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="selector-class">.box</span> <span class="selector-tag">label</span>&#123;</span><br><span class="line">         <span class="attribute">line-height</span>: <span class="number">40px</span>;</span><br><span class="line">         <span class="attribute">display</span>: block;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="selector-tag">form</span>&#123;</span><br><span class="line">         <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">         <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">         <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="selector-class">.ok</span>&#123;</span><br><span class="line">         <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">         <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20200425160501258.png#pic_center" alt="在这里插入图片描述"></p>
+<h1 id="输入标签"><a href="#输入标签" class="headerlink" title="输入标签"></a>输入标签</h1><p>输入标签就是<code>&lt;input&gt;</code>标签，通过设置其type值即可呈现出不同的表单元素，常用的几种为：</p>
+<ul>
+<li>文本框</li>
+<li>单/多选框</li>
+<li>按钮</li>
+<li>文件框</li>
+<li>图像域</li>
+</ul>
+<h2 id="文本框"><a href="#文本框" class="headerlink" title="文本框"></a>文本框</h2><p>表格中常用的文本框有两种</p>
+<ul>
+<li><p>单行文本框</p>
+</li>
+<li><p>密码框</p>
+<p>单行文本框的type属性应该设置为text<br>密码文本框的type属性应该设置为password</p>
+</li>
+</ul>
+<p><em>在密码框中输入的字符，将会被隐藏为***</em>或者原点标识</p>
+<h3 id="语法格式"><a href="#语法格式" class="headerlink" title="语法格式"></a>语法格式</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span> <span class="attr">class</span>=<span class="string">"xxx"</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">size</span>=<span class="string">""</span> <span class="attr">maxlength</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"请在这里输入..."</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">size</span>=<span class="string">""</span> <span class="attr">maxlength</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"..."</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>单行文本框与密码框一样，都有额外的4个属性</p>
+<ul>
+<li>name命名文本框，用于与其他表单元素作区分</li>
+<li>size表示文本框在页面中显示的长度，以字符为单位</li>
+<li>maxlength表示最长输入长度</li>
+<li>value表示文本框中的默认文字</li>
+</ul>
+<h2 id="单选框和复选框"><a href="#单选框和复选框" class="headerlink" title="单选框和复选框"></a>单选框和复选框</h2><p>顾名思义，单选框用于只能单选的选项，复选框用于可多选的选项<br>单选举例：性别选项<br>复选举例：兴趣爱好</p>
+<h3 id="语法格式-1"><a href="#语法格式-1" class="headerlink" title="语法格式"></a>语法格式</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">value</span>=<span class="string">"男"</span> <span class="attr">name</span>=<span class="string">"sex"</span> <span class="attr">checked</span>=<span class="string">"checked"</span>&gt;</span>男</span><br><span class="line">              <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">value</span>=<span class="string">"女"</span> <span class="attr">name</span>=<span class="string">"sex"</span>&gt;</span>女</span><br><span class="line">          <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"篮球"</span> <span class="attr">name</span>=<span class="string">"like"</span>&gt;</span>篮球</span><br><span class="line">          <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"足球"</span> <span class="attr">name</span>=<span class="string">"like"</span>&gt;</span>足球</span><br><span class="line">          <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"羽毛球"</span> <span class="attr">name</span>=<span class="string">"like"</span>&gt;</span>羽毛球</span><br><span class="line">          <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"乒乓球"</span> <span class="attr">name</span>=<span class="string">"like"</span>&gt;</span>乒乓球</span><br><span class="line">      <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200425221854337.png#pic_center" alt="在这里插入图片描述"><br>单选框：type值为radio，value值为传回信息，name是给单选取名字达到分组，否则无法将两个‘男和女’这两个单选框分到同一个类别，checked是默认选中</p>
+<p>复选框：type值为checkbox，其他属性意思与单选框一致</p>
+<h2 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h2><p>在HTML中，按钮有三种</p>
+<ol>
+<li>普通按钮（常配合js使用）</li>
+<li>提交按钮（提交表单信息）</li>
+<li>重置按钮（重置表单信息）</li>
+</ol>
+<h3 id="语法格式-2"><a href="#语法格式-2" class="headerlink" title="语法格式"></a>语法格式</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">name</span>=<span class="string">"自定义"</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"打印"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">name</span>=<span class="string">"按钮名"</span> <span class="attr">value</span>=<span class="string">"提交"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">name</span>=<span class="string">"按钮名"</span> <span class="attr">value</span>=<span class="string">"重置"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>普通按钮：<code>type=&quot;button&quot;</code> <code>name是自定义名字</code> <code>value是显示在html上的信息</code><br>提交按钮：<code>type=&quot;submit&quot;``name是自定义名字</code> <code>value是显示在html上的信息</code>（如果不写value，默认就是提交）<br>提交按钮：<code>type=&quot;reset&quot;``name是自定义名字</code> <code>value是显示在html上的信息</code>（如果不写value，默认就是重置）<br><strong>注：普通按钮还有一个属性是click，通常接一个函数，但是这样写，一行代码过多，所以使用js绑定点击事件函数比较好</strong></p>
+<h2 id="图像域和文件域"><a href="#图像域和文件域" class="headerlink" title="图像域和文件域"></a>图像域和文件域</h2><p>图像域：使用一些图片来代替按钮的显示，但是与按钮有一样的功能，即把按钮在页面上的显示更换为一张照片，用于增强美感</p>
+<p>文件域：将本地文件上传到服务器端</p>
+<h3 id="语法格式-3"><a href="#语法格式-3" class="headerlink" title="语法格式"></a>语法格式</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"image"</span> <span class="attr">src</span>=<span class="string">"./img/01.jpg"</span> <span class="attr">width</span>=<span class="string">"50px"</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">value</span>=<span class="string">"123"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>图像域：<code>type=&quot;image&quot;</code>，src是图片路径，可以是相对路径，也可以是绝对路径，也可以添加width、height设置图片大小，name是设置按钮类型（button、submit）默认是button</p>
+<p>文件域：<code>type=&quot;file&quot;</code></p>
+<h2 id="文本域"><a href="#文本域" class="headerlink" title="文本域"></a>文本域</h2><p>文本域：与文本框唯一的区别在于可以添加多行文字，通常用于大量输入字符的地方，如评价、答题界面、留言板</p>
+<h3 id="语法格式-4"><a href="#语法格式-4" class="headerlink" title="语法格式"></a>语法格式</h3><figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;textarea name="pingjia" value="" id="" cols="30" rows="10"&gt;&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200425232209327.png#pic_center" alt="在这里插入图片描述"></p>
+<ul>
+<li>name：文本域的名称</li>
+<li>value：默认的文字</li>
+<li>cols：列数</li>
+<li>row：行数</li>
+</ul>
+<p><strong>注：如果超出设置行数列数将会出现滚动条</strong></p>
+<h2 id="菜单-列表"><a href="#菜单-列表" class="headerlink" title="菜单/列表"></a>菜单/列表</h2><p>菜单/列表也被称为下拉框，即内置多个选项进行单选，这类选项一般是多选一，使用多个单选框比较浪费空间，所以使用下拉列表。</p>
+<h3 id="语法格式-5"><a href="#语法格式-5" class="headerlink" title="语法格式"></a>语法格式</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">size</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span>不及格<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span>及格<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span>中等<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span>良好<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span>优秀<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://img-blog.csdnimg.cn/20200425235518933.png#pic" alt="在这里插入图片描述">      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="https://img-blog.csdnimg.cn/20200425235609574.png" alt="在这里插入图片描述"></p>
+<p> 使用select标签表示菜单/列表，使用option标签表示一个选项</p>
+<ul>
+<li>name：列表的名称</li>
+<li>size：列表显示长度，如果不使用或者0就是下拉列表，使用了就是列表</li>
+<li>value：返回的值</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML+CSS+JS复习笔记</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>新手小白零基础搭建个人博客（三）部署篇</title>
     <url>/2020/04/25/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89%E9%83%A8%E7%BD%B2%E7%AF%87/%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89%E9%83%A8%E7%BD%B2%E7%AF%87/</url>
     <content><![CDATA[<h1 id="搭建本地hexo服务"><a href="#搭建本地hexo服务" class="headerlink" title="搭建本地hexo服务"></a>搭建本地hexo服务</h1><p>搭建本地hexo服务可以参见我之前的博客，这里不再赘述。</p>
