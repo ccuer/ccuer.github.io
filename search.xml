@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML+CSS+JavaScript复习笔记持更（四）——多媒体篇</title>
+    <url>/2020/04/27/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94%E5%A4%9A%E5%AA%92%E4%BD%93%E7%AF%87/</url>
+    <content><![CDATA[<h1 id="HTML5的多媒体"><a href="#HTML5的多媒体" class="headerlink" title="HTML5的多媒体"></a>HTML5的多媒体</h1><p>在html5中新增了两个多媒体标签</p>
+<ul>
+<li>audio音频标签</li>
+<li>video视频标签<h2 id="语法格式"><a href="#语法格式" class="headerlink" title="语法格式"></a>语法格式</h2>在语法格式上，音频与视频，大致相同<br><em>（无法正常播放）</em><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
+往src里填写视频/音频路径即可，但是这时候会显示一个图片，不会进行播放，也没办法操控播放<a id="more"></a>，这是因为我们还没有使用任何的控制组件。</li>
+</ul>
+<p><strong>正确可使用方式：</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">src</span>=<span class="string">"1.mp3"</span> <span class="attr">controls</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">src</span>=<span class="string">"./1.mp4"</span> <span class="attr">controls</span>=<span class="string">"controls"</span> <span class="attr">width</span>=<span class="string">"300px"</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>controls属性表示使用浏览器自带控制条，通常自带播放、暂停等按钮。<br>controls的完全写法应该是<code>controls=&quot;controls&quot;</code>，也可以简写成 controls</p>
+<p>谷歌浏览器实测：<br><img src="https://img-blog.csdnimg.cn/20200426234204114.png#pic_center" alt="在这里插入图片描述"><br>IE浏览器实测：<br><img src="https://img-blog.csdnimg.cn/20200426234304573.png#pic_center" alt="在这里插入图片描述"><br>突然觉得谷歌好圆润，符合我的审美，nice</p>
+<h2 id="多媒体的其他属性"><a href="#多媒体的其他属性" class="headerlink" title="多媒体的其他属性"></a>多媒体的其他属性</h2><ul>
+<li>autoplay（自动播放，<code>autoplay=&quot;autoplay&quot;</code>，可简写为 autoplay ）</li>
+<li>perload（预加载，提高播放速度，属性值none、metadata、auto）</li>
+<li>poster(video独有，如果播放失败时展示一幅图片代替，属性值即为图片地址)</li>
+<li>loop（循环播放，<code>loop=&quot;loop&quot;</code>，可简写为loop）</li>
+<li>width、height（设置窗口的大小）</li>
+<li>currentsrc（只读属性，返回媒体的URL地址）</li>
+<li>played、paused、ended（已经播放的时间段、是否暂停、是否播放完毕）</li>
+<li>volume、muted（音量、静音）</li>
+</ul>
+<p>在perload中，none表示不预先加载，metadata表示预先加载元数据（字节数、第一帧、时间等）</p>
+<p>paused和ended返回的是布尔值，true表示已暂停/已结束，false表示未暂停/未结束</p>
+<p>volume表示音量，属性值1-0，1表示100%，0表示0%<br>muted表示静音，属性值为布尔值，true表示静音，false表示未静音</p>
+<h2 id="多媒体的方法"><a href="#多媒体的方法" class="headerlink" title="多媒体的方法"></a>多媒体的方法</h2><p>无论是音频还是视频，都存在三种方法，播放、暂停、重新载入</p>
+<ul>
+<li>播放 play()</li>
+<li>暂停 pause()</li>
+<li>重新载入 load()</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">"xsx"</span> <span class="attr">src</span>=<span class="string">"./1.mp4"</span> <span class="attr">controls</span>=<span class="string">"controls"</span> <span class="attr">preload</span>=<span class="string">"auto"</span> <span class="attr">muted</span>=<span class="string">"true"</span> <span class="attr">autoplay</span>=<span class="string">"autoplay"</span> <span class="attr">preload</span>=<span class="string">"auto"</span> <span class="attr">width</span>=<span class="string">"300px"</span> <span class="attr">loop</span>=<span class="string">"loop"</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"播放"</span> <span class="attr">onclick</span>=<span class="string">play()</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"暂停"</span> <span class="attr">onclick</span>=<span class="string">pause()</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"重新加载"</span> <span class="attr">onclick</span>=<span class="string">load()</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> x = <span class="built_in">document</span>.getElementById(<span class="string">'xsx'</span>)</span></span><br><span class="line"><span class="actionscript">        <span class="function"><span class="keyword">function</span> <span class="title">play</span><span class="params">()</span></span>&#123;</span></span><br><span class="line">            x.play()</span><br><span class="line"><span class="javascript">            <span class="built_in">console</span>.log(<span class="string">"播放"</span>)</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="actionscript">        <span class="function"><span class="keyword">function</span> <span class="title">pause</span><span class="params">()</span></span>&#123;</span></span><br><span class="line">            x.pause()</span><br><span class="line"><span class="javascript">            <span class="built_in">console</span>.log(<span class="string">"暂停"</span>)</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="actionscript">        <span class="function"><span class="keyword">function</span> <span class="title">load</span><span class="params">()</span></span>&#123;</span></span><br><span class="line">            x.load()</span><br><span class="line"><span class="javascript">            <span class="built_in">console</span>.log(<span class="string">"重新加载"</span>)</span></span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/2020042700135655.png#pic_center" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>HTML+CSS+JS复习笔记</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML+CSS+JavaScript复习笔记持更（三）——表单篇</title>
     <url>/2020/04/26/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E8%A1%A8%E5%8D%95%E7%AF%87/</url>
     <content><![CDATA[<h1 id="表单概述"><a href="#表单概述" class="headerlink" title="表单概述"></a>表单概述</h1><p>表单在网页中经常可见，基本上所有的需要提交收集信息的网站都需要用到表单，最常见的就是各种网站的登录页面，一个登陆页面最主要的就是各种表单元素的收集，表单主要使用form标签来完成</p>
