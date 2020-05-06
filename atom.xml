@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.ccuer.cn/"/>
-  <updated>2020-05-06T08:12:49.840Z</updated>
+  <updated>2020-05-06T09:23:15.501Z</updated>
   <id>blog.ccuer.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML+CSS+JavaScript复习笔记持更（十）——CSS3常用属性之定位</title>
+    <link href="blog.ccuer.cn/2020/05/06/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E5%8D%81%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E5%AE%9A%E4%BD%8D/"/>
+    <id>blog.ccuer.cn/2020/05/06/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E5%8D%81%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E5%AE%9A%E4%BD%8D/</id>
+    <published>2020-05-06T09:23:38.768Z</published>
+    <updated>2020-05-06T09:23:15.501Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;定位&quot;&gt;&lt;a href=&quot;#定位&quot; class=&quot;headerlink&quot; title=&quot;定位&quot;&gt;&lt;/a&gt;定位&lt;/h2&gt;&lt;p&gt;定位主要是用来设定元素在页面上的位置的，其代码为：&lt;code&gt;position&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;定位有三种定位方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;static（无特殊定位，按照dom排序）&lt;/li&gt;
+&lt;li&gt;absolute（绝对定位，往前面找最近的，有定位属性的元素，以该元素的起点为起点，绝对定位）（脱离文档流，其他元素将会占用该元素的原有位置）&lt;/li&gt;
+&lt;li&gt;relative（相对定位，相对自己原来在dom元素中的位置定位）（不脱离文档流）&lt;/li&gt;
+&lt;li&gt;fixed（绝对定位，相对浏览器显示区域）（脱离文档流）
+    
+    </summary>
+    
+    
+      <category term="HTML+CSS+JS复习笔记" scheme="blog.ccuer.cn/categories/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="html" scheme="blog.ccuer.cn/tags/html/"/>
+    
+      <category term="css" scheme="blog.ccuer.cn/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML+CSS+JavaScript复习笔记持更（九）——CSS3常用属性之盒模型</title>

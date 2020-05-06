@@ -6,7 +6,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    HTML+CSS+JavaScript复习笔记持更（九）——CSS3常用属性之盒模型 |  小陈同学 の blog
+    HTML+CSS+JavaScript复习笔记持更（十）——CSS3常用属性之定位 |  小陈同学 の blog
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -32,7 +32,7 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="post-HTML-CSS-JS复习笔记/HTML+CSS+JavaScript复习笔记持更（九）——CSS3常用属性之盒模型" class="article article-type-post" itemscope
+  <article id="post-HTML-CSS-JS复习笔记/HTML+CSS+JavaScript复习笔记持更（十）——CSS3常用属性之定位" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -40,7 +40,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  HTML+CSS+JavaScript复习笔记持更（九）——CSS3常用属性之盒模型
+  HTML+CSS+JavaScript复习笔记持更（十）——CSS3常用属性之定位
 </h1>
   
 
@@ -49,8 +49,8 @@
 
     
     <div class="article-meta">
-      <a href="/2020/05/06/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E7%9B%92%E6%A8%A1%E5%9E%8B/" class="article-date">
-  <time datetime="2020-05-06T08:16:19.376Z" itemprop="datePublished">2020-05-06</time>
+      <a href="/2020/05/06/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E5%8D%81%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E5%AE%9A%E4%BD%8D/" class="article-date">
+  <time datetime="2020-05-06T09:23:38.768Z" itemprop="datePublished">2020-05-06</time>
 </a>
       
   <div class="article-category">
@@ -64,7 +64,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">577字</span>
+            <span class="post-count">785字</span>
         </span>
     </span>
 
@@ -73,7 +73,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">2分钟</span>
+            <span class="post-count">3分钟</span>
         </span>
     </span>
 </div>
@@ -100,22 +100,28 @@
       
 
       
-      <h2 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h2><p>盒模型是CSS中最最重要的概念之一了，这个概念比较抽象，它规定了元素框处理元素内容、外边距、内边距、边框的方式。</p>
-<h3 id="内、外边距的属性"><a href="#内、外边距的属性" class="headerlink" title="内、外边距的属性"></a>内、外边距的属性</h3><p>内边距：padding<br>外边距：margin<br>边框：border</p>
-<p>简单的说，把页面的每一个元素，想象成一个盒子，<a id="more"></a>最中心最里面的就是元素内容，元素内容被内边距包裹起来，而边框又包含了内边距，最后最外面是外边距</p>
-<p>所以从外到内的顺序是：外边距、边框、内边距、元素内容</p>
-<p><img src="https://img-blog.csdnimg.cn/2020050614493599.png#pic_center" alt="在这里插入图片描述"><br>在使用的时候：<br>外边距不在边框内，主要用于元素整体位置调整<br>内边距在边框内，主要用于元素在边框内的位置调整</p>
-<p><em>tip：内边距的空间也会受到元素的属性影响，比如背景颜色</em></p>
+      <h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p>定位主要是用来设定元素在页面上的位置的，其代码为：<code>position</code></p>
+<p>定位有三种定位方式：</p>
+<ul>
+<li>static（无特殊定位，按照dom排序）</li>
+<li>absolute（绝对定位，往前面找最近的，有定位属性的元素，以该元素的起点为起点，绝对定位）（脱离文档流，其他元素将会占用该元素的原有位置）</li>
+<li>relative（相对定位，相对自己原来在dom元素中的位置定位）（不脱离文档流）</li>
+<li>fixed（绝对定位，相对浏览器显示区域）（脱离文档流）<a id="more"></a>
+其中在一般的页面中，最常用的就是relative+absolute，在父元素设置relative绝对定位，在子元素设置absolute相对定位，即子绝父相。</li>
+</ul>
+<p>设置了<code>position：relative；</code>定位属性之后，通过left、right、top、bottom来设置相对四个方向的位移，即可达到定位的需求</p>
 <p>语法格式：</p>
-<p>效果样式：<br><img src="https://img-blog.csdnimg.cn/2020050615022081.png#pic_center" alt="在这里插入图片描述"></p>
-<p>在这里，可能不太容易看的出来，我们可以调出控制台再看，就比较容易：<br><img src="https://img-blog.csdnimg.cn/20200506150505449.png#pic_center" alt="在这里插入图片描述"><br>看背景颜色，我们的内边距也算在背景颜色里了，也就是说内边距也算是元素主体内容的一部分。</p>
-<p>在margin和padding中都是一样属性赋值：<br>如果赋值四个数字（带单位，空格间隔），那就是依次对（上、右、下、左）四个方向设置<br>如果赋值三个数字（带单位，空格间隔），那就是依次对（上、左右、下）三个方向设置<br>如果赋值两个数字（带单位，空格间隔），那就是依次对（上下、左右）两个方向设置<br>如果赋值一个数字（带单位），那就是同时对（上、右、下、左）四个方向设置</p>
-<p>当然，也可以单独设置某个方向的margin或者padding<br>语法举例：<code>margin-top:;</code>、<code>padding-right:;</code></p>
-<h3 id="边框的属性"><a href="#边框的属性" class="headerlink" title="边框的属性"></a>边框的属性</h3><p>边框，主要设置的就是边框宽度、边框颜色、边框样式、圆角。</p>
-<p>当然，对于我这种懒人来说，最常用的还是简写，直接写border<br>，就可以设置宽度、样式、颜色，简单便捷。</p>
-<p>语法用例：<br>圆角：<code>border-radius: 50%;</code><br>边框宽度：<code>border-width: 20px;</code><br>边框颜色：<code>border-color: red;</code><br>边框样式：<code>border-style: solid;</code></p>
-<p>常用简写：<code>border：1px solid red</code></p>
-<p><em>注：圆角的50%，效果就是一个圆</em></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        *&#123;</span><br><span class="line">            margin: 0;</span><br><span class="line">            padding: 0;</span><br><span class="line">        &#125;</span><br><span class="line">        div&#123;</span><br><span class="line">            width: 200px;</span><br><span class="line">            height: 200px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.x1</span>&#123;</span></span><br><span class="line">            position: relative;</span><br><span class="line">            background-color: chartreuse;</span><br><span class="line">            left: 100px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.x2</span>&#123;</span></span><br><span class="line">            background-color: red;</span><br><span class="line">            position: absolute;</span><br><span class="line">            left: 200px;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"x1"</span>&gt;</span></span><br><span class="line">        我是x1</span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"x2"</span>&gt;</span>我就是x2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果图：</p>
+<p><img src="https://img-blog.csdnimg.cn/20200506165148498.png" alt="在这里插入图片描述"><br>可以设置的单位有px、%</p>
+<h2 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h2><p>浮动主要是针对块级元素说的，对块级元素设置float属性后，该元素处于不完全脱离文档流状态。</p>
+<p>不完全脱离文档流：使元素漂浮起来，但还保留着自身的位置，其他元素能往上拼接，但是不能占有。<br>简单的说，就是让别的元素环绕在自己身边。</p>
+<p>在float中有两种设置，left、right，分别是左浮动和右浮动</p>
+<p>浮动这种特殊的不完全脱离文档流将会极大地破坏原有的文档流位置，所以为了去除这种影响，我们可以在下面的元素设置清除浮动：<code>clean：both；</code></p>
+<p>语法格式：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        *&#123;</span><br><span class="line">            margin: 0;</span><br><span class="line">            padding: 0;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.x1</span>&#123;</span></span><br><span class="line">            width: 1200px;</span><br><span class="line">            height: 200px;</span><br><span class="line">            position: relative;</span><br><span class="line">            background-color: chartreuse;</span><br><span class="line">            left: 100px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.x2</span>&#123;     </span></span><br><span class="line">            width: 600px;</span><br><span class="line">            height: 200px;</span><br><span class="line">            background-color: red;</span><br><span class="line">            float: left;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.x3</span>&#123;</span></span><br><span class="line">            width: 200px;</span><br><span class="line">            height: 200px;</span><br><span class="line">            clear: both;</span><br><span class="line">            background-color: rgb(53, 104, 172);</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"x1"</span>&gt;</span></span><br><span class="line">        我是x1</span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"x2"</span>&gt;</span>我就是x2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"x3"</span>&gt;</span>我就是x3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果图：<br><img src="https://img-blog.csdnimg.cn/20200506171758649.png#pic_center" alt="在这里插入图片描述"><br>由于x2这个元素设置了<code>float:left;</code>所以x2浮动起来，跑到x1的最左边，x3也因为x2的浮动而把起点上浮，但是因为x1的不完全脱离文档流会保留自身位置，所以x3不能占有x1的内容区，因而有一点点在下面显示。</p>
+<p>当我打开x3的清除浮动<code>clear: both;</code>，x3就会恢复正常，在下面显示<br><img src="https://img-blog.csdnimg.cn/20200506171559190.png#pic_center" alt="在这里插入图片描述"></p>
 
       
       <!-- reward -->
@@ -185,7 +191,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http:blog.ccuer.cn/2020/05/06/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E7%9B%92%E6%A8%A1%E5%9E%8B/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http:blog.ccuer.cn/2020/05/06/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E5%8D%81%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E5%AE%9A%E4%BD%8D/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -203,19 +209,10 @@
   
   <nav class="article-nav">
     
-      <a href="/2020/05/06/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E5%8D%81%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E5%AE%9A%E4%BD%8D/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            HTML+CSS+JavaScript复习笔记持更（十）——CSS3常用属性之定位
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/05/02/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E5%85%AB%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E5%88%97%E8%A1%A8/" class="article-nav-link">
+      <a href="/2020/05/06/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E7%9B%92%E6%A8%A1%E5%9E%8B/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">HTML+CSS+JavaScript复习笔记持更（八）——CSS3常用属性之列表</div>
+        <div class="article-nav-title">HTML+CSS+JavaScript复习笔记持更（九）——CSS3常用属性之盒模型</div>
       </a>
     
   </nav>
