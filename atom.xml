@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.ccuer.cn/"/>
-  <updated>2020-05-02T09:21:52.367Z</updated>
+  <updated>2020-05-06T08:12:49.840Z</updated>
   <id>blog.ccuer.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML+CSS+JavaScript复习笔记持更（九）——CSS3常用属性之盒模型</title>
+    <link href="blog.ccuer.cn/2020/05/06/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E7%9B%92%E6%A8%A1%E5%9E%8B/"/>
+    <id>blog.ccuer.cn/2020/05/06/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E7%9B%92%E6%A8%A1%E5%9E%8B/</id>
+    <published>2020-05-06T08:16:19.376Z</published>
+    <updated>2020-05-06T08:12:49.840Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;盒模型&quot;&gt;&lt;a href=&quot;#盒模型&quot; class=&quot;headerlink&quot; title=&quot;盒模型&quot;&gt;&lt;/a&gt;盒模型&lt;/h2&gt;&lt;p&gt;盒模型是CSS中最最重要的概念之一了，这个概念比较抽象，它规定了元素框处理元素内容、外边距、内边距、边框的方式。&lt;/p&gt;
+&lt;h3 id=&quot;内、外边距的属性&quot;&gt;&lt;a href=&quot;#内、外边距的属性&quot; class=&quot;headerlink&quot; title=&quot;内、外边距的属性&quot;&gt;&lt;/a&gt;内、外边距的属性&lt;/h3&gt;&lt;p&gt;内边距：padding&lt;br&gt;外边距：margin&lt;br&gt;边框：border&lt;/p&gt;
+&lt;p&gt;简单的说，把页面的每一个元素，想象成一个盒子，
+    
+    </summary>
+    
+    
+      <category term="HTML+CSS+JS复习笔记" scheme="blog.ccuer.cn/categories/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="html" scheme="blog.ccuer.cn/tags/html/"/>
+    
+      <category term="css" scheme="blog.ccuer.cn/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML+CSS+JavaScript复习笔记持更（八）——CSS3常用属性之列表</title>

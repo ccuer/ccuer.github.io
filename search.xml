@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML+CSS+JavaScript复习笔记持更（九）——CSS3常用属性之盒模型</title>
+    <url>/2020/05/06/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E7%9B%92%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h2 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h2><p>盒模型是CSS中最最重要的概念之一了，这个概念比较抽象，它规定了元素框处理元素内容、外边距、内边距、边框的方式。</p>
+<h3 id="内、外边距的属性"><a href="#内、外边距的属性" class="headerlink" title="内、外边距的属性"></a>内、外边距的属性</h3><p>内边距：padding<br>外边距：margin<br>边框：border</p>
+<p>简单的说，把页面的每一个元素，想象成一个盒子，<a id="more"></a>最中心最里面的就是元素内容，元素内容被内边距包裹起来，而边框又包含了内边距，最后最外面是外边距</p>
+<p>所以从外到内的顺序是：外边距、边框、内边距、元素内容</p>
+<p><img src="https://img-blog.csdnimg.cn/2020050614493599.png#pic_center" alt="在这里插入图片描述"><br>在使用的时候：<br>外边距不在边框内，主要用于元素整体位置调整<br>内边距在边框内，主要用于元素在边框内的位置调整</p>
+<p><em>tip：内边距的空间也会受到元素的属性影响，比如背景颜色</em></p>
+<p>语法格式：</p>
+<p>效果样式：<br><img src="https://img-blog.csdnimg.cn/2020050615022081.png#pic_center" alt="在这里插入图片描述"></p>
+<p>在这里，可能不太容易看的出来，我们可以调出控制台再看，就比较容易：<br><img src="https://img-blog.csdnimg.cn/20200506150505449.png#pic_center" alt="在这里插入图片描述"><br>看背景颜色，我们的内边距也算在背景颜色里了，也就是说内边距也算是元素主体内容的一部分。</p>
+<p>在margin和padding中都是一样属性赋值：<br>如果赋值四个数字（带单位，空格间隔），那就是依次对（上、右、下、左）四个方向设置<br>如果赋值三个数字（带单位，空格间隔），那就是依次对（上、左右、下）三个方向设置<br>如果赋值两个数字（带单位，空格间隔），那就是依次对（上下、左右）两个方向设置<br>如果赋值一个数字（带单位），那就是同时对（上、右、下、左）四个方向设置</p>
+<p>当然，也可以单独设置某个方向的margin或者padding<br>语法举例：<code>margin-top:;</code>、<code>padding-right:;</code></p>
+<h3 id="边框的属性"><a href="#边框的属性" class="headerlink" title="边框的属性"></a>边框的属性</h3><p>边框，主要设置的就是边框宽度、边框颜色、边框样式、圆角。</p>
+<p>当然，对于我这种懒人来说，最常用的还是简写，直接写border<br>，就可以设置宽度、样式、颜色，简单便捷。</p>
+<p>语法用例：<br>圆角：<code>border-radius: 50%;</code><br>边框宽度：<code>border-width: 20px;</code><br>边框颜色：<code>border-color: red;</code><br>边框样式：<code>border-style: solid;</code></p>
+<p>常用简写：<code>border：1px solid red</code></p>
+<p><em>注：圆角的50%，效果就是一个圆</em></p>
+]]></content>
+      <categories>
+        <category>HTML+CSS+JS复习笔记</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML+CSS+JavaScript复习笔记持更（八）——CSS3常用属性之列表</title>
     <url>/2020/05/02/HTML-CSS-JS%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/HTML+CSS+JavaScript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%8C%81%E6%9B%B4%EF%BC%88%E5%85%AB%EF%BC%89%E2%80%94%E2%80%94CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E4%B9%8B%E5%88%97%E8%A1%A8/</url>
     <content><![CDATA[<h2 id="列表属性"><a href="#列表属性" class="headerlink" title="列表属性"></a>列表属性</h2><p>之前已经介绍过了列表标签。主要有有序列表和无序列表，为了更好地控制这两种列表，CSS还提供了这两种列表的样式设置。</p>
